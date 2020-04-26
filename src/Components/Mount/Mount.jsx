@@ -1,6 +1,5 @@
 import React from 'react'
-import { useMount, useUnmount } from "../../Hooks/useMount"
-import { useToggle } from "../../Hooks/useToggle"
+import { useMount, useUnmount, useToggle } from "../../Hooks"
 
 export const UnMount = () => {
   useMount(() => {
