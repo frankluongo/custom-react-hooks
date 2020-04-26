@@ -9,7 +9,8 @@ import green from "./green.png";
 
 import Toggle from "./Components/Toggle"
 import Increment from "./Components/Increment";
-import Mount from "./Components/Mount/Mount";
+import Mount from "./Components/Mount";
+import Hover from "./Components/Hover";
 
 function App() {
   return (
@@ -23,22 +24,23 @@ function App() {
         <Toggle />
         <Increment />
         <Mount />
+        <Hover imgSrc={black} />
         <CardGrid>
           <Card style={{ background: "var(--purp)" }}>
             <h3>Some card</h3>
-            <img src={purp} />
+            <img alt="Card Description" src={purp} />
           </Card>
           <Card style={{ background: "var(--blue)" }}>
             <h3>Some card</h3>
-            <img src={blue} />
+            <img alt="Card Description" src={blue} />
           </Card>
           <Card style={{ background: "var(--black)" }}>
             <h3>Some card</h3>
-            <img src={black} />
+            <img alt="Card Description" src={black} />
           </Card>
           <Card style={{ background: "var(--green)" }}>
             <h3>Some card</h3>
-            <img src={green} />
+            <img alt="Card Description" src={green} />
           </Card>
         </CardGrid>
       </Container>
