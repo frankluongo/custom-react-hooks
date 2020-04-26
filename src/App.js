@@ -9,6 +9,7 @@ import green from "./green.png";
 
 import Toggle from "./Components/Toggle"
 import Increment from "./Components/Increment";
+import Mount from "./Components/Mount/Mount";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <h2>Super Cool</h2>
         <Toggle />
         <Increment />
+        <Mount />
         <CardGrid>
           <Card style={{ background: "var(--purp)" }}>
             <h3>Some card</h3>
