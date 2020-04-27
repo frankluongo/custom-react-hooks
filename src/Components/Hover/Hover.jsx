@@ -5,7 +5,6 @@ import { useHover } from '../../Hooks/useHover'
 const Hover = ({ imgSrc }) => {
 
   const [isHovered, bind] = useHover();
-  console.log(isHovered)
 
   return (
     <Card {...bind} style={{ background: "var(--black)" }}>

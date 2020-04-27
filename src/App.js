@@ -14,8 +14,12 @@ import Hover from "./Components/Hover";
 import { PageWrapper } from "./State";
 import Navigation from "./Components/Navigation";
 import Cookie from "./Components/Cookie";
+import { useWindowWidth } from "./Hooks";
 
 function App() {
+  const { width } = useWindowWidth()
+  console.log(width)
+
   return (
     <PageWrapper>
       <div>
