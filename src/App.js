@@ -13,6 +13,7 @@ import Mount from "./Components/Mount";
 import Hover from "./Components/Hover";
 import { PageWrapper } from "./State";
 import Navigation from "./Components/Navigation";
+import Cookie from "./Components/Cookie";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         </Header>
         <Navigation />
         <Container>
+          <Cookie />
           <h2>Super Cool</h2>
           <Toggle />
           <Increment />
