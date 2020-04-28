@@ -7,7 +7,7 @@ import purp from "./purp.png";
 import black from "./black.png";
 import green from "./green.png";
 
-import Toggle from "./Components/Toggle"
+import Toggle from "./Components/Toggle";
 import Increment from "./Components/Increment";
 import Mount from "./Components/Mount";
 import Hover from "./Components/Hover";
@@ -15,10 +15,11 @@ import { PageWrapper } from "./State";
 import Navigation from "./Components/Navigation";
 import Cookie from "./Components/Cookie";
 import { useWindowWidth } from "./Hooks";
+import Scripty from "./Components/Scripty";
 
 function App() {
-  const { width } = useWindowWidth()
-  console.log(width)
+  const { width } = useWindowWidth();
+  console.log(width);
 
   return (
     <PageWrapper>
@@ -28,6 +29,7 @@ function App() {
           <h1>Header</h1>
         </Header>
         <Navigation />
+        <Scripty />
         <Container>
           <Cookie />
           <h2>Super Cool</h2>
