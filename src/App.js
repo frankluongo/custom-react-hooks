@@ -16,6 +16,7 @@ import Navigation from "./Components/Navigation";
 import Cookie from "./Components/Cookie";
 import { useWindowWidth } from "./Hooks";
 import Scripty from "./Components/Scripty";
+import LocalStore from "./Components/LocalStore/LocalStore";
 
 function App() {
   const { width } = useWindowWidth();
@@ -36,6 +37,7 @@ function App() {
           <Toggle />
           <Increment />
           <Mount />
+          <LocalStore />
           <Hover imgSrc={black} />
           <CardGrid>
             <Card style={{ background: "var(--purp)" }}>
