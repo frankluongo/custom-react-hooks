@@ -8,8 +8,5 @@ export const useLocalStorage = (key, initial = null) => {
     window.localStorage.setItem(key, value);
   }, [value, key]);
 
-  return {
-    value,
-    setValue,
-  };
+  return [value, setValue];
 };

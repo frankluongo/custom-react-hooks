@@ -17,10 +17,10 @@ import Cookie from "./Components/Cookie";
 import { useWindowWidth } from "./Hooks";
 import Scripty from "./Components/Scripty";
 import LocalStore from "./Components/LocalStore/LocalStore";
+import Theme from "./Components/Theme";
 
 function App() {
   const { width } = useWindowWidth();
-  console.log(width);
 
   return (
     <PageWrapper>
@@ -32,6 +32,7 @@ function App() {
         <Navigation />
         <Scripty />
         <Container>
+          <Theme />
           <Cookie />
           <h2>Super Cool</h2>
           <Toggle />
