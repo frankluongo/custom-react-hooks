@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "../../Elements";
-import { useHover, useMeasure } from "../../Hooks";
+import { useHover, useMeasure } from "@hooks";
 
 const Hover = ({ imgSrc }) => {
   const [isHovered, bind] = useHover();

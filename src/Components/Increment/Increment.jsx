@@ -1,24 +1,22 @@
-import React from 'react'
-import { useIncrement } from '../../Hooks/useIncrement'
+import React from "react";
+import { useIncrement } from "@hooks";
 
 const Increment = () => {
-    const [value, {incrementValue, decrementValue, reset}] = useIncrement({
-        initialValue: 0,
-        step: 10
-    })
+  const [value, { incrementValue, decrementValue, reset }] = useIncrement({
+    initialValue: 0,
+    step: 10,
+  });
 
-    return (
-        <div>
-            <button onClick={decrementValue}>-</button>
-            {value}
-            <button onClick={incrementValue}>+</button>
-            <div>
-                <button onClick={reset}>
-                    Reset
-                </button>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div>
+      <button onClick={decrementValue}>-</button>
+      {value}
+      <button onClick={incrementValue}>+</button>
+      <div>
+        <button onClick={reset}>Reset</button>
+      </div>
+    </div>
+  );
+};
 
-export default Increment
+export default Increment;
